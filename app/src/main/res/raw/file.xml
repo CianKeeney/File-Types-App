@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="teams.xsd"
+    generated="2011-11-05T23:09:59">
+
+    <file>
+        <name>Excel</name>
+        <description>
+            Excel is a popular spreadsheet program used with data like numbers and formulas, text, and drawing shapes.</description>
+        <image>excel</image>
+        <url>https://en.wikipedia.org/wiki/Microsoft_Excel</url>
+    </file>
+    <file>
+        <name>HTML</name>
+        <description>
+            HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. </description>
+        <image>html</image>
+        <url>https://en.wikipedia.org/wiki/HTML</url>
+    </file>
+    <file>
+        <name>JPG</name>
+        <description>JPG is a widely used compressed image format for containing digital images.</description>
+        <image>jpg</image>
+        <url>https://en.wikipedia.org/wiki/JPEG</url>
+    </file>
+    <file>
+        <name>MOV</name>
+        <description>Video file containing an "elementary stream," or raw video data.</description>
+        <image>mov</image>
+        <url>https://en.wikipedia.org/wiki/MOV</url>
+    </file>
+    <file>
+        <name>MP3</name>
+        <description>The MP3 file extension is a widely used digital audio container that has revolutionized the music playback, sharing and distributing industry. </description>
+        <image>mp3</image>
+        <url>https://en.wikipedia.org/wiki/MP3</url>
+    </file>
+    <file>
+        <name>PDF</name>
+        <description>PDF is an abbreviation that stands for Portable Document Format.</description>
+        <image>pdf</image>
+        <url>https://en.wikipedia.org/wiki/PDF</url>
+    </file>
+
+
+
+
+
+</dataroot>
