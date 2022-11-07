@@ -14,7 +14,7 @@ public class FileFromXML {
 
     private Context context;
 
-    public File[] getPeople() {
+    public File[] getFile() {
         return file;
     }
 
@@ -22,8 +22,6 @@ public class FileFromXML {
 
     public FileFromXML(Context context){
         this.context = context;
-
-        // make the input stream
         InputStream stream = context.getResources().openRawResource(R.raw.file);
         DocumentBuilder docBuilder = null;
         Document xmlDoc = null;
@@ -35,7 +33,6 @@ public class FileFromXML {
 
         }
 
-        // slice xmlDoc
         NodeList nameList = xmlDoc.getElementsByTagName("name");
         NodeList descriptionList = xmlDoc.getElementsByTagName("description");
         NodeList imageList = xmlDoc.getElementsByTagName("image");
@@ -43,16 +40,13 @@ public class FileFromXML {
 
         file = new File[nameList.getLength()];
 
-        // populate people
         for(int i=0;i< file.length;i++){
             String name = nameList.item(i).getFirstChild().getNodeValue();
             String description = descriptionList.item(i).getFirstChild().getNodeValue();
             String image = imageList.item(i).getFirstChild().getNodeValue();
             String url = urlList.item(i).getFirstChild().getNodeValue();
-
             file[i] = new File(name, description, image, url);
         }
-
     }
 
     public int getLength(){return file.length;}

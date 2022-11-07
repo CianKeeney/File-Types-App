@@ -4,39 +4,37 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.TextView;
 
-public class Activity2 extends AppCompatActivity {
+public class ActivityThree extends AppCompatActivity {
     //Button to next activity
     private Button moveForward;
     //ImageView object
-    ImageView file_picture;
+    TextView file_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main3);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        moveForward = findViewById(R.id.buttonLink);
         Bundle b = getIntent().getExtras();
 
         // Function for next activity
-        moveForward = findViewById(R.id.buttonInfo);
         moveForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Pass the intent to be used to pull the bundle
-                Intent intent=new Intent(Activity2.this, Activity3.class);
-                intent.putExtra("file_description", b.getString("file_description"));
+                Intent intent = new Intent(ActivityThree.this, ActivityFour.class);
+                intent.putExtra("file_url", b.getString("file_url"));
                 startActivity(intent);
             }
         });
 
-        file_picture = findViewById(R.id.imageView2);
-        Integer id = Activity2.this.getResources().getIdentifier(b.getString("file_image"), "drawable", Activity2.this.getPackageName());
-        file_picture.setImageResource(id);
+        file_text = findViewById(R.id.textView5);
+        file_text.setText(b.getString("file_description"));
 
     }
 }

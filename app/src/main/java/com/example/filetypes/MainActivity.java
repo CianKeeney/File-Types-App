@@ -21,16 +21,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // recycleView settings
+        // recycleView
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        // get the data
         file = new FileFromXML(this);
-        File[] files = file.getPeople();
+        File[] files = file.getFile();
 
-        // make the adapter and set it to recycleView
         adapter = new DataAdapter(this, R.layout.row_layout, files);
         recyclerView.setAdapter(adapter);
     }

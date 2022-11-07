@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="teams.xsd"
+    xsi:noNamespaceSchemaLocation="files.xsd"
     generated="2011-11-05T23:09:59">
 
     <file>
@@ -15,7 +15,7 @@
         <description>
             HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. </description>
         <image>html</image>
-        <url>https://en.wikipedia.org/wiki/HTML</url>
+        <url>http://en.wikipedia.org/wiki/HTML</url>
     </file>
     <file>
         <name>JPG</name>
@@ -41,9 +41,4 @@
         <image>pdf</image>
         <url>https://en.wikipedia.org/wiki/PDF</url>
     </file>
-
-
-
-
-
 </dataroot>
